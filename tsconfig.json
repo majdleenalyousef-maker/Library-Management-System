@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "none",
+    "lib": ["ES2022", "DOM"],
+    "outFile": "dist/main.js",
+    "strict": true,
+    "noImplicitOverride": true
+  },
+  "files": ["src/Book.ts", "src/ReferenceBook.ts", "src/Library.ts", "src/main.ts"]
+}

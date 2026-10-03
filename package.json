@@ -1,0 +1,12 @@
+{
+  "name": "task-1-adv",
+  "version": "1.0.0",
+  "description": "Library Management System - OOP in TypeScript",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}

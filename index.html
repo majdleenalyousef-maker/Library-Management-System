@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مكتبة المعرفة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">📖</div>
+        <h2>مكتبة المعرفة</h2>
+        <p>نظام إدارة المكتبة الإلكترونية</p>
+      </div>
+      <nav class="nav">
+        <a href="#" class="active">🏠 الصفحة الرئيسية</a>
+        <a href="#">📚 إدارة الكتب</a>
+        <a href="#">📁 الفئات</a>
+        <a href="#">📊 التقارير</a>
+      </nav>
+      <div class="user">
+        <div class="avatar">م</div>
+        <div><strong>مجدلين اليوسف</strong><span>مدير النظام</span></div>
+      </div>
+      <a href="#" class="logout">↩ تسجيل الخروج</a>
+    </aside>
+
+    <main class="content">
+      <header class="top">
+        <div>
+          <h1>مرحباً بك في مكتبة المعرفة</h1>
+          <p>اكتشف مجموعة مميزة من الكتب في مختلف المجالات</p>
+        </div>
+        <button id="open-add" class="primary" type="button">+ إضافة كتاب جديد</button>
+      </header>
+
+      <section class="toolbar">
+        <input id="search" type="search" placeholder="🔍 ابحث عن كتاب أو مؤلف..." aria-label="بحث">
+        <select id="category" aria-label="الفئة"></select>
+      </section>
+
+      <section id="books" class="grid" aria-live="polite"></section>
+
+      <footer class="pager">
+        <span id="total"></span>
+        <nav id="pages" class="pages" aria-label="الصفحات"></nav>
+      </footer>
+    </main>
+  </div>
+
+
+  <dialog id="add-dialog">
+    <form id="add-form">
+      <h2>إضافة كتاب جديد</h2>
+      <label>العنوان<input name="title" required></label>
+      <label>المؤلف<input name="author" required></label>
+      <label>الفئة<input name="category" list="category-list" required></label>
+      <datalist id="category-list"></datalist>
+      <label>رمز الموقع (اختياري)<input name="locationCode" placeholder="مثال: الطابق 1 - رف A3"></label>
+      <small>إذا كتبت رمز الموقع يُضاف الكتاب كمرجع.</small>
+      <div class="dialog-actions">
+        <button type="button" id="cancel-add" class="ghost">إلغاء</button>
+        <button type="submit" class="primary">إضافة</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="dist/main.js"></script>
+</body>
+</html>
