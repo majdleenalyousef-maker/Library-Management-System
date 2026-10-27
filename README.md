@@ -1,4 +1,4 @@
-# 📚 task 1 adv — Library Management System
+# Library Management System
 
 A simple educational project that simulates an **electronic library management system**, built with **Object-Oriented Programming (OOP)** in **TypeScript**.
 Only **HTML + CSS + TypeScript** are used — no external libraries (no jQuery, no Bootstrap).
